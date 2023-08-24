@@ -35,10 +35,16 @@ export class Fumble {
             <p>${this.body}</p>
           </div>
 
-          <div class="row">
-            <p>Form goes here</p>
-            <button class="btn btn-button">Submit</button>
-          </div>
+
+          <section>
+            <form>
+              <div class="mb-3">
+                <label for="fumble" class="form-label">THE FUMBLE BEGINS</label>
+                <textarea class="form-control" id="fumbleSubmit" rows="3"></textarea>
+              </div>
+              <button onclick="app.FumbleController.checkForm()" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </section>
         </div>
     `
   }

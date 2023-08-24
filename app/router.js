@@ -21,11 +21,6 @@ export const router = [
             <div class="col-4">Fast Time goes here</div>
             <p>model body goes here</p>
           </div>
-
-          <div class="row">
-            <p>Form goes here</p>
-            <button class="btn btn-button">Submit</button>
-          </div>
         </div>
 
 
@@ -55,6 +50,11 @@ export const router = [
           </div>
         </div>
       </section>
+
+      
+
+
+
     </div>
     `
   },

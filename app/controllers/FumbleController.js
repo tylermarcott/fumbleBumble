@@ -1,6 +1,7 @@
 import { AppState } from "../AppState.js";
 import { Fumble } from "../models/Fumble.js";
 import { fumblesService } from "../services/FumblesService.js";
+import { getFormData } from "../utils/FormHandler.js";
 import { setHTML } from "../utils/Writer.js";
 
 
@@ -40,4 +41,12 @@ export class FumbleController {
     fumblesService.setActive(fumbleId)
 
   }
+
+  checkForm() {
+    window.event.preventDefault()
+    let textAreaElem = document.querySelector('textarea')
+    console.log(textAreaElem)
+
+  }
+
 }
