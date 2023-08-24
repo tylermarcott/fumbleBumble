@@ -38,5 +38,6 @@ export class FumbleController {
     // console
     //   .log('setting active')
     fumblesService.setActive(fumbleId)
+
   }
 }

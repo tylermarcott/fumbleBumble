@@ -12,9 +12,9 @@ export const router = [
     view: /*html*/`
 
     <div class="container-fluid">
-      <section id="active-fumble" class="row">
+      <section  class="row">
 
-        <div class="col-8">
+        <div class="col-8" id="active-fumble">
           <h2>Jungle Jumble</h2>
           <div class="row">
             <div class="col-4">Easy Fumble</div>
@@ -27,6 +27,8 @@ export const router = [
             <button class="btn btn-button">Submit</button>
           </div>
         </div>
+
+
 
         <div id='fumble-list' class="col-4">
           <h1>Fumbles</h1>
