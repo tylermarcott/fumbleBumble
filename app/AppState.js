@@ -23,7 +23,8 @@ class ObservableAppState extends EventEmitter {
     })
   ]
 
-
+  /** @type {import('./models/Fumble.js').Fumble|null */
+  activeFumble = null
 
 
 

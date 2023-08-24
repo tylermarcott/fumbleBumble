@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js";
 import { Fumble } from "../models/Fumble.js";
+import { fumblesService } from "../services/FumblesService.js";
 import { setHTML } from "../utils/Writer.js";
 
 
@@ -13,6 +14,14 @@ function _drawFumbles() {
   console.log(content)
 }
 
+function _drawActiveFumble() {
+  console.log('drawing active fumlino')
+  console.log(AppState.activeFumble)
+
+  let active = AppState.activeFumble
+
+  setHTML('active-fumble', active.ActiveTemplate)
+}
 
 
 
@@ -20,7 +29,14 @@ export class FumbleController {
 
   constructor() {
     _drawFumbles()
+    AppState.on('activeFumble', _drawActiveFumble)
 
 
+  }
+
+  setActive(fumbleId) {
+    // console
+    //   .log('setting active')
+    fumblesService.setActive(fumbleId)
   }
 }

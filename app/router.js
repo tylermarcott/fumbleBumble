@@ -12,7 +12,7 @@ export const router = [
     view: /*html*/`
 
     <div class="container-fluid">
-      <section class="row">
+      <section id="active-fumble" class="row">
 
         <div class="col-8">
           <h2>Jungle Jumble</h2>
