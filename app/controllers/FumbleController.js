@@ -44,8 +44,16 @@ export class FumbleController {
 
   checkForm() {
     window.event.preventDefault()
-    let textAreaElem = document.querySelector('textarea')
-    console.log(textAreaElem)
+    // const form = window.event.target
+    // const formData = getFormData(form)
+
+
+    const textAreaElem = document.getElementById('fumbleSubmit')
+    const fumbleBody = textAreaElem.value
+
+    fumblesService.checkForm(fumbleBody)
+
+
 
   }
 

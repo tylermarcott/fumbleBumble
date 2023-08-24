@@ -12,6 +12,8 @@ export class Fumble {
   }
 
 
+
+
   get ListTemplate() {
     return `
     <h1>Fumbles</h1>
@@ -37,7 +39,7 @@ export class Fumble {
 
 
           <section>
-            <form>
+            <form id="text-form">
               <div class="mb-3">
                 <label for="fumble" class="form-label">THE FUMBLE BEGINS</label>
                 <textarea class="form-control" id="fumbleSubmit" rows="3"></textarea>
