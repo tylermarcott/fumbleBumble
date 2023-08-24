@@ -26,13 +26,16 @@ class FumblesService {
   }
 
 
+  // FIXME: trying to mess around with this syntax and get a function that output the length of time it takes to complete the typing challenge. getting NaN as an ouput for calculateTime() fxn. Look into this.
+
   startGame() {
-    AppState.
-      Date.now()
+    console.log(Date.now())
+    return
   }
 
   endGame() {
-    return Date.now()
+    console.log(Date.now())
+    return
   }
 
   calculateTime() {

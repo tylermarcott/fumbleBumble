@@ -40,6 +40,7 @@ export class FumbleController {
     //   .log('setting active')
     fumblesService.setActive(fumbleId)
 
+    fumblesService.startGame()
   }
 
   checkForm() {
@@ -53,8 +54,9 @@ export class FumbleController {
 
     fumblesService.checkForm(fumbleBody)
 
+    fumblesService.endGame()
 
-
+    fumblesService.calculateTime()
   }
 
 }
